@@ -2,7 +2,7 @@
 function myPago() {
     var txt;
     if (confirm("Su pago ha sido completado y su orden ha sido tramitada correctamente. Este mensaje le puede servir como recibo, que también será enviado por email. Muchas gracias por su compra.")) {
-        window.location = "home.html";
+        window.location = "index.html";
     } else {
       txt = "Cancelar";
     }
