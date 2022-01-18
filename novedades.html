@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Novedades - El Palacio del Libro</title>
+
+             <!-- Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+             <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="style/novedades.css">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    </head>
+    <body>
+
+        <!-- Header -->
+
+            <div class="header">
+                <img class="logo" src="images/logo.png" alt="">
+                <form class="example" action="/action_page.php">
+                    <input  type="text" placeholder="Buscar..." name="search2">
+                    <button type="submit"><img class="fa fa-search" src="images/search (1).png" alt=""></button>
+                </form>
+                <div class="header-right">
+                    <div class="dropdown">
+                        <button class="dropbtn">Español 
+                         <img class="fa fa-caret-down" src="images/down-filled-triangular-arrow.png" alt=""> 
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Inglés</a>
+                          <a href="#">Alemán</a>
+                          <a href="#">Italiano</a>
+                          <a href="#">Francés</a>
+                          <a href="#">Mandarín</a>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <img id="menu" class="icono" src="images/search (1) copia.png" alt="">
+                        <img class="icono" onclick="location.href='login.html'" src="images/usuario-de-perfil.png" alt="">
+                        <h1 id="contador">#</h1>
+                        <img class="icono" onclick="location.href='carrito.html'" src="images/carrito-de-compras (1).png" alt="">
+                        <img id="menu" class="icono" onclick="openNav()" src="images/menus.png" alt="">
+
+                    </div> 
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="home.html">Inicio</a> 
+                    <a href="novedades.html">Novedades</a>
+                    <a href="masleido.html">Los más leídos</a>
+                    <a href="#recomendados">Recomendados</a>
+                    <a href="#ebooks">eBooks</a>
+                    <a href="#atencion">Atención al Cliente</a>
+                </div>
+            </div>
+
+        <!-- Navbar -->
+        
+        <div class="navbar">
+            <a href="home.html">Inicio</a> 
+            <a class="select" href="novedades.html">Novedades</a>
+            <a href="masleido.html">Los más leídos</a>
+            <a href="#recomendados">Recomendados</a>
+            <a href="#ebooks">eBooks</a>
+            <a href="#atencion">Atención al Cliente</a>
+        </div>
+
+        <!-- filtro -->
+        <div class="main">
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Mostrar todos</button> <!-- Crea un filtro por categoria -->
+            <button class="btn" onclick="filterSelection('autoayuda')"> Autoayuda</button>
+            <button class="btn" onclick="filterSelection('fantasia')"> Fantasía</button>
+            <button class="btn" onclick="filterSelection('drama')"> Drama</button>
+            <button class="btn" onclick="filterSelection('novela')"> Novelas</button>
+        </div>
+
+        <!-- Center -->
+
+        <div class="row">
+            <div class="column drama col-3 col-s-6">
+                <div class="card">
+                    <img class="libro" src="images/libro16.JPEG" alt="">
+                    <h3>Casa de Muñecas</h3>
+                    <p class="price">11,40€</p>
+                    <p>La acción de Casa de muñecas (1879) tiene como protagonista a Nora, una mujer que simula estúpida frivolidad pero que en verdad es inteligente y aguda, que busca su felicida </p>
+                    <p><button onclick="miContador()" class="aumento">Añadir al carrito</button></p>
+                </div>
+            </div>
+          
+            <div class="column fantasia col-3 col-s-6">
+                <div class="card">
+                    <img class="libro" src="images/libro2.JPG" alt="">
+                    <h3>La Vida Invisible de Addie Larue</h3>
+                    <p class="price">19,97€</p>
+                    <p>Addie entrega su alma a cambio de la inmortalidad; el diablo le entregará la inmortalidad que tanto desea, pero le quitará algo que ella anhelará durante toda su existencia: la posibilidad de ser recordada.</p>
+                    <p><button onclick="miContador()" class="aumento">Añadir al carrito</button></p>
+                </div>
+            </div>
+
+            <div class="column autoayuda col-3 col-s-4">
+                <div class="card">
+                    <img class="libro" src="images/libro3.JPG" alt="">
+                    <h3>Hábitos Atómicos</h3>
+                    <p class="price">17,95€</p>
+                    <p>Se revela cómo esos cambios minúsculos pueden crecer hasta llegar a cambiar nuestra carrera profesional, nuestras relaciones y todos los aspectos de nuestra vida</p>
+                    <p><button onclick="miContador()" class="aumento">Añadir al carrito</button></p>
+                </div>
+            </div>
+          
+            <div class="column fantasia col-3 col-s-4">
+                <div class="card">
+                    <img class="libro" src="images/libro4.JPG" alt="">
+                    <h3>Sol de Medianoche</h3>
+                    <p class="price">18,95€</p>
+                    <p>La inolvidable historia, contada a través de los ojos de Edward, toma un cariz nuevo y definitivamente oscuro. Conocer a Bella es lo más perturbador e intrigante que le ha sucedido en todos sus años como vampiro.</p>
+                    <p><button onclick="miContador()" class="aumento">Añadir al carrito</button></p>
+                </div>    
+            </div>
+
+            <div class="column novela col-3 col-s-4">
+                <div class="card">
+                    <img class="libro" src="images/libro5.JPEG" alt="">
+                    <h3>Patria</h3>
+                    <p class="price">13,25€</p>
+                    <p>El día en que ETA anuncia el abandono de las armas, Bittori se dirige al cementerio para contarle a la tumba de su marido el Txato, asesinado por los terroristas, que ha decidido volver a la casa donde vivieron.</p>
+                    <p><button onclick="miContador()" class="aumento">Añadir al carrito</button></p>
+                </div>    
+            </div>
+         
+            <div class="column novela col-3 col-s-4">
+                <div class="card">
+                    <img class="libro" src="images/libro6.JPG" alt="">
+                    <h3>Cien Años de Soledad</h3>
+                    <p class="price">9,45€</p>
+                    <p>La familia Buendía-Iguarán, con sus milagros, fantasías, obsesiones, tragedias, incestos y adulterios, representaba al mismo tiempo el mito y la historia, la tragedia y el amor del mundo entero.</p>
+                    <p><button onclick="miContador()" class="aumento">Añadir al carrito</button></p>
+                </div>    
+            </div>
+                      
+            <div class="column autoayuda col-3 col-s-4">
+                <div class="card">
+                    <img class="libro" src="images/libro7.JPG" alt="">
+                    <h3>Padre Rico Padre Pobre</h3>
+                    <p class="price">10,45€</p>
+                    <p>LRobert T. Kiyosaki ha transformado la forma en que todo el mundo percibe el concepto del dinero; es reconocido en todo el mundo como un defensor apasionado de la educación financiera.</p>
+                    <p><button onclick="miContador()" class="aumento">Añadir al carrito</button></p>
+                </div>    
+            </div>
+                      
+            <div class="column drama col-3 col-s-4">
+                <div class="card">
+                    <img class="libro" src="images/libro8.JPG" alt="">
+                    <h3>Las Ventajas de Ser un Marginado</h3>
+                    <p class="price">15,15€</p>
+                    <p>Charlie, un chico ingenuo, mordaz y solitario, acaba de empezar el instituto. La cosa no pinta demasiado bien el primer día de instituto cuando solo consigue hacer un amigo</p>
+                    <p><button onclick="miContador()" class="aumento">Añadir al carrito</button></p>
+                </div>    
+            </div>
+            <div class="column fantasia col-3 col-s-4">
+                <div class="card">
+                    <img class="libro" src="images/libro14.JPEG" alt="">
+                    <h3>Seis de Cuervos</h3>
+                    <p class="price">17,10€</p>
+                    <p> A Kaz le acaban de ofrecer la oportunidad de llevar a cabo un gran robo, un arriesgado golpe que podría hacerle más rico de lo que se jamás se ha atrevido a imaginar.</p>
+                    <p><button onclick="miContador()" class="aumento">Añadir al carrito</button></p>
+                </div>    
+            </div>
+            <div class="column autoayuda col-3 col-s-4">
+                <div class="card">
+                    <img class="libro" src="images/libro9.JPEG" alt="">
+                    <h3>El Poder de Ahora</h3>
+                    <p class="price">9,50€</p>
+                    <p>Desde la primera página de este extraordinario libro nos elevamos a una mayor altura y respiramos un aire más ligero.</p>
+                    <p><button onclick="miContador()" class="aumento">Añadir al carrito</button></p>
+                </div>    
+            </div>
+                      
+            <div class="column fantasia col-3 col-s-4">
+                <div class="card">
+                    <img class="libro" src="images/libro10.JPG" alt="">
+                    <h3>Una Corte de Rosas y Espinas</h3>
+                    <p class="price">16,10€</p>
+                    <p>Feyre está desesperada, su vida y la de su familia dependen de ella. Enfrentada al hambre más absoluto, no dudará en ir al bosque prohibido y matar si es necesario.</p>
+                    <p><button onclick="miContador()" class="aumento">Añadir al carrito</button></p>
+                </div>    
+            </div>
+                      
+            <div class="column fantasia col-3 col-s-4">
+                <div class="card">
+                    <img class="libro" src="images/libro11.JPG" alt="">
+                    <h3>La Reina Roja </h3>
+                    <p class="price">16,10€</p>
+                    <p>La sociedad  está dividida; por un lado está la gente común que tiene sangre roja y por otro, a aquellos que poseen sangre plateada y que tienen habilidades sobrenaturales.</p>
+                    <p><button onclick="miContador()" class="aumento">Añadir al carrito</button></p>
+                </div>    
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="footer1">
+                <div class="row">
+                    <div class="col-3 col-s-3">
+                        <h3>El palacio del libro</h3>
+                        <a class="politica" href="sobrenosotros.html"><p>Quiénes somos</p></a>
+                        <p>Trabaja con nosotros</p>
+                        <p>Nuestras librerías</p>
+                        <p>Nuestro equipo</p>
+                    </div>
+                    <div class="col-3 col-s-3">
+                        <h3>¿Necesitas ayuda?</h3>
+                        <a class="politica" href="preguntasfrecuentes.html"><p>Preguntas frecuentes</p></a>
+                        <p>Estado del pedido</p>
+                        <p>Devoluciones</p>
+                        <p>Incidencias de pedidos</p>
+                    </div>
+                    <div class="col-3 col-s-3">
+                        <h3>Servicios</h3>
+                        <p>Editoriales</p>
+                        <p>Autopublicación</p>
+                        <p>Libros al por mayor</p>
+                        <p>Vende con nosotros</p>
+                    </div>
+                    <div class="col-3 col-s-3">
+                        <h3>Información legal</h3>
+                        <a class="politica" href="politicaprivacidad.html"><p>Política de privacidad</p></a>
+                        <p>Política de anulaciones</p>
+                        <p>Condiciones de uso</p>
+                        <p>Condiciones para vender</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="iconf">
+                    <img class="iconof" src="images/facebook (1).png" alt="">
+                    <img class="iconof" src="images/gorjeo (1).png" alt="">
+                    <img class="iconof" src="images/instagram (5).png" alt="">
+                </div>
+            </div>
+        </div>
+
+                        <!-- Javascript -->
+                        <script src="script/novedades.js"></script>
+    </body>
+
+</html>

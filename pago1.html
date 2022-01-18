@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Pasarela de Pago - Palacio del libro</title>
+
+        <!-- Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="style/pago1.css">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    </head>
+    <body>
+
+        <!-- Header -->
+        <div class="header">
+            <img class="logo" src="images/logo.png" alt="">
+            <form class="example" action="/action_page.php">
+                <input  type="text" placeholder="Buscar..." name="search2">
+                <button type="submit"><img class="fa fa-search" src="images/search (1).png" alt=""></button>
+            </form>
+            <div class="header-right">
+                <div class="dropdown">
+                    <button class="dropbtn">Español 
+                     <img class="fa fa-caret-down" src="images/down-filled-triangular-arrow.png" alt=""> 
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Inglés</a>
+                      <a href="#">Alemán</a>
+                      <a href="#">Italiano</a>
+                      <a href="#">Francés</a>
+                      <a href="#">Mandarín</a>
+                    </div>
+                </div>
+                <div class="icon">
+                    <img class="icono" onclick="location.href='login.html'" src="images/usuario-de-perfil.png" alt="">
+                </div> 
+            </div>
+        </div>
+
+        <!-- Pasarela de Pago 1 -->
+
+        <div class="row">
+            <div class="col-100">
+                <div class="container">
+                    <form name="form1" autocomplete="off" action="/pago2.html" onSubmit="return validateForm()" method="post"> <!-- Permite validar el formulario -->
+                                    <h3>Información de envío</h3>
+                                    <label for="name">Nombre completo</label>
+                                    <input type="text" name="name" required>
+                                    <label for="direccion">Dirección </label>
+                                    <input type="text" name="direccion" required>
+                                    <label for="mas">Apartamento, local, etc</label>
+                                    <input type="text" name="mas" required>
+                            
+                                    <div class="row">
+                                        <div class="col-50">                            
+                                            <label for="ciudad">Ciudad</label>
+                                            <input type="text" name="ciudad" required>
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="state">Provincia</label>
+                                            <input type="text" name="state" required>
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="myInput">País</label>
+                                            <input id="myInput" type="text" name="myCountry" required>
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="postal">Código Postal</label>
+                                            <input type="text" name="postal" required>
+                                        </div>
+                                    </div>
+                    
+                            <input id="next" type="submit" value="Continuar"/>
+                        </form>
+                </div>
+
+                <div class="navbar">
+                    <a class="active" href="#"><h2>1</h2><p>Información de envío</p></a> 
+                    <a href="#"><h2>2</h2><p>Método de pago</p></a> 
+                    <a href="#"><h2>3</h2><p>Tramitar pedido</p></a> 
+                </div>
+                <img class="seguridad" src="images/sectigo.png" alt="">
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+
+ 
+        <div class="footer">
+            <div class="footer1">
+                <div class="row">
+                    <div class="col-3 col-s-3">
+                        <h3>El palacio del libro</h3>
+                        <a class="politica" href="sobrenosotros.html"><p>Quiénes somos</p></a>
+                        <p>Trabaja con nosotros</p>
+                        <p>Nuestras librerías</p>
+                        <p>Nuestro equipo</p>
+                    </div>
+                    <div class="col-3 col-s-3">
+                        <h3>¿Necesitas ayuda?</h3>
+                        <a class="politica" href="preguntasfrecuentes.html"><p>Preguntas frecuentes</p></a>
+                        <p>Estado del pedido</p>
+                        <p>Devoluciones</p>
+                        <p>Incidencias de pedidos</p>
+                    </div>
+                    <div class="col-3 col-s-3">
+                        <h3>Servicios</h3>
+                        <p>Editoriales</p>
+                        <p>Autopublicación</p>
+                        <p>Libros al por mayor</p>
+                        <p>Vende con nosotros</p>
+                    </div>
+                    <div class="col-3 col-s-3">
+                        <h3>Información legal</h3>
+                        <a class="politica" href="politicaprivacidad.html"><p>Política de privacidad</p></a>
+                        <p>Política de anulaciones</p>
+                        <p>Condiciones de uso</p>
+                        <p>Condiciones para vender</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="iconf">
+                    <img class="iconof" src="images/facebook (1).png" alt="">
+                    <img class="iconof" src="images/gorjeo (1).png" alt="">
+                    <img class="iconof" src="images/instagram (5).png" alt="">
+                </div>
+            </div>
+        </div>
+
+                            <!-- Javascript -->
+                            <script src="script/pago1.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Los Más Leídos - El Palacio del Libro</title>
+
+             <!-- Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+             <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="style/leido.css">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    </head>
+    <body>
+
+        <!-- Header -->
+
+            <div class="header">
+                <img class="logo" src="images/logo.png" alt="">
+                <form class="example" action="/action_page.php">
+                    <input  type="text" placeholder="Buscar..." name="search2">
+                    <button type="submit"><img class="fa fa-search" src="images/search (1).png" alt=""></button>
+                </form>
+                <div class="header-right">
+                    <div class="dropdown">
+                        <button class="dropbtn">Español 
+                         <img class="fa fa-caret-down" src="images/down-filled-triangular-arrow.png" alt=""> 
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="home_ingles.html">Inglés</a>
+                          <a href="#">Alemán</a>
+                          <a href="#">Italiano</a>
+                          <a href="#">Francés</a>
+                          <a href="#">Mandarín</a>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <img id="menu" class="icono" src="images/search (1) copia.png" alt="">
+                        <img class="icono" onclick="location.href='login.html'" src="images/usuario-de-perfil.png" alt="">
+                        <img class="icono" src="images/carrito-de-compras (1).png" alt="">
+                        <img id="menu" class="icono" onclick="openNav()" src="images/menus.png" alt="">
+
+                    </div> 
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="home.html">Inicio</a> 
+                    <a href="novedades.html">Novedades</a>
+                    <a href="masleido.html">Los más leídos</a>
+                    <a href="#recomendados">Recomendados</a>
+                    <a href="#ebooks">eBooks</a>
+                    <a href="#atencion">Atención al Cliente</a>
+                </div>
+            </div>
+
+        <!-- Navbar -->
+        
+        <div class="navbar">
+            <a href="home.html">Inicio</a> 
+            <a href="novedades.html">Novedades</a>
+            <a class="active" href="masleido.html">Los más leídos</a>
+            <a href="#recomendados">Recomendados</a>
+            <a href="#ebooks">eBooks</a>
+            <a href="#atencion">Atención al Cliente</a>
+        </div>
+
+        <!-- Center -->
+
+        <div>
+            <div class="contenedor">
+                <h2>Los más leídos 2021</h2>
+                <div class="card">
+                    <img class="images" src="images/libro3.jpg" alt="">
+                    <h1>Hábitos Atómicos</h1>
+                    <p>Se revela cómo esos cambios minúsculos pueden crecer hasta llegar a cambiar nuestra carrera profesional, nuestras relaciones y todos los aspectos de nuestra vida</p>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Elige una opción <img class="fa fa-caret-down" src="images/down-filled-triangular-arrow.png" alt=""> </button> <!-- Al hacer click se puede elegir una opcion y te lleva a la pagina de registrarse -->
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="login.html">Quiero leerlo</a>
+                          <a href="login.html">Leyendo</a>
+                          <a href="login.html">Leído</a>
+                        </div>
+                      </div>
+                    <p><button>Añadir al carrito</button></p>
+                </div>
+                <div class="card">
+                    <img class="images" src="images/libro4.jpg" alt="">
+                    <h1>Sol de Medianoche</h1>
+                    <p>La inolvidable historia, contada a través de los ojos de Edward, toma un cariz nuevo y definitivamente oscuro. Conocer a Bella es lo más perturbador e intrigante que le ha sucedido en todos sus años como vampiro.</p>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Elige una opción <img class="fa fa-caret-down" src="images/down-filled-triangular-arrow.png" alt=""> </button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="login.html">Quiero leerlo</a>
+                          <a href="login.html">Leyendo</a>
+                          <a href="login.html">Leído</a>
+                        </div>
+                      </div>
+                    <p><button>Añadir al carrito</button></p>
+                </div> 
+                <div class="card">
+                    <img class="images" src="images/libro11.jpg" alt="">
+                    <h1>La Reina Roja</h1>
+                    <p>La sociedad  está dividida; por un lado está la gente común que tiene sangre roja y por otro, a aquellos que poseen sangre plateada y que tienen habilidades sobrenaturales</p>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Elige una opción <img class="fa fa-caret-down" src="images/down-filled-triangular-arrow.png" alt=""> </button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="login.html">Quiero leerlo</a>
+                          <a href="login.html">Leyendo</a>
+                          <a href="login.html">Leído</a>
+                        </div>
+                      </div>
+                    <p><button>Añadir al carrito</button></p>
+                </div>
+            </div>
+            <div class="contenedor">
+                <h2>Los más leídos en noviembre</h2>
+                <div class="card">
+                    <img class="images" src="images/libro5.jpeg" alt="">
+                    <h1>Patria</h1>
+                    <p>El día en que ETA anuncia el abandono de las armas, Bittori se dirige al cementerio para contarle a su marido el Txato, asesinado por los terroristas, que ha decidido volver a la casa donde vivieron.</p>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Elige una opción <img class="fa fa-caret-down" src="images/down-filled-triangular-arrow.png" alt=""> </button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="login.html">Quiero leerlo</a>
+                          <a href="login.html">Leyendo</a>
+                          <a href="login.html">Leído</a>
+                        </div>
+                      </div>
+                    <p><button>Añadir al carrito</button></p>
+                </div>
+                <div class="card">
+                    <img class="images" src="images/libro7.jpg" alt="">
+                    <h1>Padre Rico Padre Pobre</h1>
+                    <p>SLRobert T. Kiyosaki ha transformado la forma en que todo el mundo percibe el concepto del dinero; es reconocido en todo el mundo como un defensor apasionado de la educación financiera.</p>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Elige una opción <img class="fa fa-caret-down" src="images/down-filled-triangular-arrow.png" alt=""> </button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="login.html">Quiero leerlo</a>
+                          <a href="login.html">Leyendo</a>
+                          <a href="login.html">Leído</a>
+                        </div>
+                      </div>
+                    <p><button>Añadir al carrito</button></p>
+                </div>
+                <div class="card">
+                    <img class="images" src="images/libro6.jpg" alt="">
+                    <h1>Cien Años de Soledad</h1>
+                    <p>La familia Buendía-Iguarán, con sus milagros, fantasías, obsesiones, tragedias, incestos y adulterios, representaba al mismo tiempo el mito y la historia, la tragedia y el amor del mundo entero.</p>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Elige una opción <img class="fa fa-caret-down" src="images/down-filled-triangular-arrow.png" alt=""> </button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="login.html">Quiero leerlo</a>
+                          <a href="login.html">Leyendo</a>
+                          <a href="login.html">Leído</a>
+                        </div>
+                      </div>
+                    <p><button>Añadir al carrito</button></p>
+                </div>  
+            </div>
+
+            <div class="contenedor">
+                 <h2>Últimos comentarios</h2>
+                <div class="container">
+                    <img class="perfil" src="images/perfil1.jpg" alt="Avatar">
+                    <h4>Juan P.</h4><p>Este ha sido el mejor libro que he leido este año, lo recomiendo totalmente </p>
+                        <img id="like1" src="images/like.png" alt="">
+                        <img id="dislike1" src="images/dislike.png" alt="">
+                    <span class="time-right">11:15</span>
+                </div>
+                  <div class="container">
+                    <img class="perfil" src="images/perfil1.jpg" alt="Avatar">
+                    <h4>María E.</h4><p>Me ha dejado un poco decepcionada...</p>
+                        <img id="like2" src="images/like.png" alt="">
+                        <img id="dislike2" src="images/dislike.png" alt="">
+                    <span class="time-right">09:47</span>
+                  </div>
+                  <div class="container">
+                    <img class="perfil" src="images/perfil1.jpg" alt="Avatar">
+                    <h4>Noelia R.</h4><p>¡Me encantó! se lo he recomendado a mi pareja, y también le está gustando mucho</p>
+                        <img id="like3" src="images/like.png" alt="">
+                        <img id="dislike3" src="images/dislike.png" alt="">
+                    <span class="time-right">17:30</span>
+                  </div>
+                  <div class="container">
+                    <img class="perfil" src="images/perfil1.jpg" alt="Avatar">
+                    <h4>Pedro A.</h4><p>Opino que el final del libro me ha decepcionado muchísimo</p>
+                        <img id="like4" src="images/like.png" alt="">
+                        <img id="dislike4" src="images/dislike.png" alt="">
+                    <span class="time-right">19:39</span>
+                  </div>
+                  <div class="container">
+                    <img class="perfil" src="images/perfil1.jpg" alt="Avatar">
+                    <h4>Luis T.</h4><p>Me fascina la pluma que tiene este escritor</p>
+                        <img id="like5" src="images/like.png" alt="">
+                        <img id="dislike5" src="images/dislike.png" alt="">
+                    <span class="time-right">19:41</span>
+                  </div>
+                  <div class="container">
+                    <img class="perfil" src="images/perfil1.jpg" alt="Avatar">
+                    <h4>Paula G.</h4><p>Me arrepiento de haberme comprado el libro, que basura</p>
+                        <img id="like6" src="images/like.png" alt="">
+                        <img id="dislike6" src="images/dislike.png" alt="">
+                    <span class="time-right">23:02</span>
+                  </div>
+                  <div class="container">
+                    <img class="perfil" src="images/perfil1.jpg" alt="Avatar">
+                    <h4>Teresa E.</h4><p>Me pareció aburrido, pero a partir de la segunda mitad se vuelve re interesante</p>
+                        <img id="like7" src="images/like.png" alt="">
+                        <img id="dislike7" src="images/dislike.png" alt="">
+                    <span class="time-right">23:03</span>
+                  </div>
+                 
+                    <div class="contenedor1">
+                        <form>
+                            <textarea id="respuesta" name="respuesta" rows="4" cols="50">Regístrate para participar en este foro.</textarea>
+                            <br><br>
+                            <input id="button1" type="button" value="Comentar">     
+                        </form>
+                    </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="footer1">
+                <div class="row">
+                    <div class="col-3 col-s-3">
+                        <h3>El palacio del libro</h3>
+                        <a class="politica" href="sobrenosotros.html"><p>Quiénes somos</p></a>
+                        <p>Trabaja con nosotros</p>
+                        <p>Nuestras librerías</p>
+                        <p>Nuestro equipo</p>
+                    </div>
+                    <div class="col-3 col-s-3">
+                        <h3>¿Necesitas ayuda?</h3>
+                        <a class="politica" href="preguntasfrecuentes.html"><p>Preguntas frecuentes</p></a>
+                        <p>Estado del pedido</p>
+                        <p>Devoluciones</p>
+                        <p>Incidencias de pedidos</p>
+                    </div>
+                    <div class="col-3 col-s-3">
+                        <h3>Servicios</h3>
+                        <p>Editoriales</p>
+                        <p>Autopublicación</p>
+                        <p>Libros al por mayor</p>
+                        <p>Vende con nosotros</p>
+                    </div>
+                    <div class="col-3 col-s-3">
+                        <h3>Información legal</h3>
+                        <a class="politica" href="politicaprivacidad.html"><p>Política de privacidad</p></a>
+                        <p>Política de anulaciones</p>
+                        <p>Condiciones de uso</p>
+                        <p>Condiciones para vender</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="iconf">
+                    <img class="iconof" src="images/facebook (1).png" alt="">
+                    <img class="iconof" src="images/gorjeo (1).png" alt="">
+                    <img class="iconof" src="images/instagram (5).png" alt="">
+                </div>
+            </div>
+        </div>
+
+                        <!-- Javascript -->
+                        <script src="script/home.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>The Book Palace</title>
+
+             <!-- Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+             <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="style/home.css">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    </head>
+    <body>
+
+        <!-- Header -->
+
+            <div class="header">
+                <img class="logo" src="images/logo.png" alt="">
+                <form class="example" action="/action_page.php">
+                    <input  type="text" placeholder="Search..." name="search2">
+                    <button type="submit"><img class="fa fa-search" src="images/search (1).png" alt=""></button>
+                </form>
+                <div class="header-right">
+                    <div class="dropdown">
+                        <button class="dropbtn">English 
+                         <img class="fa fa-caret-down" src="images/down-filled-triangular-arrow.png" alt=""> 
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="home.html">Spanish</a>
+                          <a href="#">German</a>
+                          <a href="#">Italian</a>
+                          <a href="#">French</a>
+                          <a href="#">Mandarn</a>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <img id="menu" class="icono" src="images/search (1) copia.png" alt="">
+                        <img class="icono" onclick="location.href='login.html'" src="images/usuario-de-perfil.png" alt="">
+                        <h1 id="contador">#</h1>
+                        <img class="icono" onclick="location.href='carrito.html'" src="images/carrito-de-compras (1).png" alt="">
+                        <img id="menu" class="icono" onclick="openNav()" src="images/menus.png" alt=""> <!-- Se abre el menu de la burger -->
+
+                    </div> 
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- Se cierra el menu de la burger -->
+                    <a href="home_ingles.html">Home</a> 
+                    <a href="novedades.html">What's new</a>
+                    <a href="masleido.html">Most read</a>
+                    <a href="#recomendados">Recommended</a>
+                    <a href="#ebooks">eBooks</a>
+                    <a href="#atencion">Customer service</a>
+                </div>
+            </div>
+
+        <!-- Navbar -->
+        
+        <div class="navbar">
+            <a class="active" href="home.html">Home</a> 
+            <a href="novedades.html">What's new</a>
+            <a href="masleido.html">Most read</a>
+            <a href="#recomendados">Recommended</a>
+            <a href="#ebooks">eBooks</a>
+            <a href="#atencion">Customer service</a>
+        </div>
+
+        <!-- Center -->
+
+        <div class="row">
+            <div class="col-3 col-s-6">
+                <div class="card">
+                    <img class="libro" src="images/book1.JPG" alt="">
+                    <h3>Turtles All The Way Down</h3>
+                    <p class="price">16,90€</p>
+                    <p>Aza had no intention of investigating the mystery of the billionaire Russell Pickett runaway, but there is a $100,000 bounty at stake and her best friend, Daisy, is unwilling to let it escape.</p>
+                    <p><button onclick="miContador()" class="aumento">Add to cart</button></p> <!-- Al hacer click aumenta en 1 el contador del carrito -->
+                </div>
+            </div>
+          
+            <div class="col-3 col-s-6">
+                <div class="card">
+                    <img class="libro" src="images/book2.JPG" alt="">
+                    <h3>The invisible Life of Addie Larue</h3>
+                    <p class="price">19,97€</p>
+                    <p>Addie gives her soul in exchange for immortality; The devil will give her the immortality she wants, but he will take away something she will miss for her entire existence: being remembered.</p>
+                    <p><button onclick="miContador()" class="aumento">Add to cart</button></p>
+                </div>
+            </div>
+
+            <div class="col-3 col-s-6">
+                <div class="card">
+                    <img class="libro" src="images/book3.JPG" alt="">
+                    <h3>Atomic Habits</h3>
+                    <p class="price">17,95€</p>
+                    <p>This amazing book by James Clear, reveals and describes how these tiny changes can grow to change our careers, our relationships, ourselves and all aspects of our lives</p>
+                    <p><button onclick="miContador()" class="aumento">Add to cart</button></p>
+                </div>
+            </div>
+          
+            <div class="col-3 col-s-6">
+                <div class="card">
+                    <img class="libro" src="images/book4.JPG" alt="">
+                    <h3>Midnight Sun</h3>
+                    <p class="price">18,95€</p>
+                    <p>The unforgettable story, told through Edward's eyes, takes on a new and definitely dark turn: meeting Bella is the most disturbing and intriguing thing that has happened to him.</p>
+                    <p><button onclick="miContador()" class="aumento">Add to cart</button></p>
+                </div>    
+            </div>
+        </div>
+
+        <div class="row">
+                      
+            <div class="col-3 col-s-6">
+                <div class="card">
+                    <img class="libro" src="images/book5.JPG" alt="">
+                    <h3>Homeland</h3>
+                    <p class="price">13,25€</p>
+                    <p>The day ETA announces the end of their activity, Bittori goes to the cemetery to tell her husband, Txato, killed by the terrorists, that she has decided to return to the house where they lived.</p>
+                    <p><button onclick="miContador()" class="aumento">Add to cart</button></p>
+                </div>    
+            </div>
+         
+            <div class="col-3 col-s-6">
+                <div class="card">
+                    <img class="libro" src="images/book6.JPG" alt="">
+                    <h3>One Hundred Years of Solitude</h3>
+                    <p class="price">9,45€</p>
+                    <p>The Buendía-Iguarán family, with its miracles, fantasies, obsessions, tragedies, incests and adulteries, represented at the same time the myth and the history, the tragedy and the love of the entire world.</p>
+                    <p><button onclick="miContador()" class="aumento">Add to cart</button></p>
+                </div>    
+            </div>
+                      
+            <div class="col-3 col-s-6">
+                <div class="card">
+                    <img class="libro" src="images/book7.JPG" alt="">
+                    <h3>Rich Dad Poor Dad</h3>
+                    <p class="price">10,45€</p>
+                    <p>LRobert T. Kiyosaki has transformed the way everyone perceives the concept of money with this book; he is recognized all around the world as a passionate advocate for financial education.</p>
+                    <p><button onclick="miContador()" class="aumento">Add to cart</button></p>
+                </div>    
+            </div>
+                      
+            <div class="col-3 col-s-6">
+                <div class="card">
+                    <img class="libro" src="images/book8.JPG" alt="">
+                    <h3>The Perks of Being a Wallflower</h3>
+                    <p class="price">15,15€</p>
+                    <p>Charlie, a naive and lonely boy, has just started high school. Things don't look too good on the first day of high school when he only manages to make one friend: his teacher</p>
+                    <p><button onclick="miContador()" class="aumento">Add to cart</button></p>
+                </div>    
+            </div>        
+        </div>
+
+        <div class="row">
+            <div class="col-3 col-s-6">
+                <div class="card">
+                    <img class="libro" src="images/book9.JPG" alt="">
+                    <h3>The Power of Now </h3>
+                    <p class="price">9,50€</p>
+                    <p>From the first page of this extraordinary book we rise to a greater height and breathe lighter air, the autor shows you how to change your life and mentality</p>
+                    <p><button onclick="miContador()" class="aumento">Add to cart</button></p>
+                </div>    
+            </div>
+                      
+            <div class="col-3 col-s-6">
+                <div class="card">
+                    <img class="libro" src="images/book10.JPG" alt="">
+                    <h3>A Court of Thorns and Roses</h3>
+                    <p class="price">16,10€</p>
+                    <p>Feyre is desperate, her life and her family's depend on her. Faced with the most absolute hunger, she will not hesitate to go to the forbidden forest and kill if it's necessary.</p>
+                    <p><button onclick="miContador()" class="aumento">Add to cart</button></p>
+                </div>    
+            </div>
+                      
+            <div class="col-3 col-s-6">
+                <div class="card">
+                    <img class="libro" src="images/book11.JPG" alt="">
+                    <h3>The Red Queen</h3>
+                    <p class="price">16,10€</p>
+                    <p>Society is divided; on the one hand there are the common people who have red blood and on the other, those who have silver blood and who have supernatural abilities.</p>
+                    <p><button onclick="miContador()" class="aumento">Add to cart</button></p>
+                </div>    
+            </div>
+                      
+            <div class="col-3 col-s-6">
+                <div class="card">
+                    <img class="libro" src="images/book12.JPG" alt="">
+                    <h3>HP and the Philosophers Stone</h3>
+                    <p class="price">14,45€</p>
+                    <p> Harry Potter is a wizard, and has been awarded a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!</p>
+                    <p><button onclick="miContador()" class="aumento">Add to cart</button></p>
+                </div>    
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="footer1">
+                <div class="row">
+                    <div class="col-3 col-s-3">
+                        <h3>The Book Palace</h3>
+                        <a class="politica" href="sobrenosotros.html"><p>About us</p></a>
+                        <p>Work with us</p>
+                        <p>Our bookshops</p>
+                        <p>Our team</p>
+                    </div>
+                    <div class="col-3 col-s-3">
+                        <h3>Support/Help</h3>
+                        <a class="politica" href="preguntasfrecuentes_ingles.html"><p>Frequently asked questions</p></a>
+                        <p>Order status</p>
+                        <p>Returns</p>
+                        <p>Order incidents</p>
+                    </div>
+                    <div class="col-3 col-s-3">
+                        <h3>Services</h3>
+                        <p>Publishing house</p>
+                        <p>Self-publishing</p>
+                        <p>Wholesale books</p>
+                        <p>Sell with us</p>
+                    </div>
+                    <div class="col-3 col-s-3">
+                        <h3>Legal Information</h3>
+                        <a class="politica" href="politicaprivacidad.html"><p>Privacy Policy</p></a>
+                        <p>Cancellation policy</p>
+                        <p>Terms of use</p>
+                        <p>Conditions to sell</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="iconf">
+                    <img class="iconof" src="images/facebook (1).png" alt="">
+                    <img class="iconof" src="images/gorjeo (1).png" alt="">
+                    <img class="iconof" src="images/instagram (5).png" alt="">
+                </div>
+            </div>
+        </div>
+
+                        <!-- Javascript -->
+                        <script src="script/home.js"></script>
+    </body>
+
+</html>
